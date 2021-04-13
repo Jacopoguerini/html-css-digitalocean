@@ -1,9 +1,19 @@
 /* common */
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 /* header */
+nav {
+    background-color: white;
+}
+
 #nav-home {
     padding: 10px 0;
 }
 #nav-home img {
-    height: 30px;
+    height: 100%;
+}
+nav a {
+    font-weight: 500;
 }
