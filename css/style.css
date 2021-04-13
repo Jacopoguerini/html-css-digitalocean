@@ -1,9 +1,26 @@
 /* common */
 body {
     font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+}
+
+.blue {
+    color: #3a8aff;
+}
+
+#signup-btn {
+    margin-top: 13px;
+    padding: 5px 10px;
+    color: #3a8aff;
+    border: 1px solid #3a8aff;
+}
+#signup-btn:hover {
+    background-color: #3a8aff;
+    color: white;
 }
 
 /* header */
+/* nav */
 nav {
     background-color: white;
 }
@@ -14,6 +31,67 @@ nav {
 #nav-home img {
     height: 100%;
 }
-nav a {
+.navbar-nav > li > a {
     font-weight: 500;
+    padding-top: 18px;
+    padding-bottom: 15px;
+    color: #031c4e;
+}
+nav i {
+    margin-left: 3px;
+    font-size: 10px;
+}
+
+.navbar-nav > li > a:hover {
+    color: #3a8aff;
+    background: none;
+}
+
+#nav-icon span {
+    height: 3px;
+    border-radius: 3px;
+    background-color: #3a8aff;
+}
+
+#nav_left {
+    margin-left: 60px;
+}
+.dropdown-menu > li > a {
+    color: #031c4e;
+}
+
+/* jumbotron */
+#jumbotron {
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#jumbotron h1{
+    font-weight: 600;
+    color: white;
+}
+
+#jumbotron p {
+    color: white;
+    opacity: 0.8;
+}
+
+#login_form {
+    margin: 50px 0;
+    background-color: white;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #031c4e;
+}
+.login_title h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.login_title .blue {
+    margin-top: 5px;
+}
+
+input {
+    margin: 10px 0;
 }
