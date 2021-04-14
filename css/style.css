@@ -16,6 +16,7 @@ body {
 h2 {
     color: #031c4e;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 h3 {
@@ -75,6 +76,22 @@ figcaption {
 .dot-full {
     background-color: #3a8aff;
 }
+
+#section-1 a,
+#section-4 a {
+    color: #3a8aff;
+    text-decoration: none;
+}
+#section-1 a:hover,
+#section-4 a:hover {
+    text-decoration: underline;
+}
+#section-1 a > i,
+#section-4 a > i {
+    font-size: 9px;
+    margin-left: 10px;
+}
+
 
 /* header */
 /* nav */
@@ -259,11 +276,11 @@ input {
     text-decoration: underline;
 }
 
-#section-1 a > i {
-    font-size: 9px;
+/* section-1 - logo list */
+.logo-list {
+    margin-bottom: 10px;
 }
 
-/* section-1 - logo list */
 .logo-list > div {
     max-height: 70px;
 }
@@ -310,9 +327,6 @@ input {
     padding: 50px 0;
     background-color: #f3f5f9;
 }
-#section-3 h2 {
-    margin-bottom: 20px;
-}
 
 #section-3 .central-figure {
     position: relative;
@@ -324,6 +338,16 @@ input {
     width: 90%;
 }
 
+/* section-4 */
+#section-4 {
+    padding: 50px 0;
+    background-color: white;
+}
+
+#section-4 img {
+    width: 30px;
+    margin-bottom: 5px;
+}
 
 
 @media screen and (max-width: 767px) {
@@ -338,10 +362,6 @@ input {
     #login_form {
         margin: 0 25px;
         width: 90%;
-    }
-
-    .logo-list {
-        margin-bottom: 10px;
     }
 
     #section-2 .wrapper_80 {
