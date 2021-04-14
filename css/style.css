@@ -201,7 +201,11 @@ input {
 }
 
 /* section-1 - logo list */
+.logo-list > div {
+    max-height: 70px;
+}
 .logo-list img {
+    max-width: 150px;
     max-height: 150px;
 }
 
@@ -243,7 +247,14 @@ input {
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 990px) {
+    .logo-list img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
     .container > .navbar-header {
         margin-right: 0px;
     }
