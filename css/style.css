@@ -46,6 +46,10 @@ figcaption {
     margin-top: 20px;
 }
 
+.link-arrow {
+    padding-left: 10px;
+}
+
 .arrow-left,
 .arrow-right {
     font-size: 30px;
@@ -84,14 +88,12 @@ figcaption {
 }
 #section-1 a:hover,
 #section-4 a:hover {
-    text-decoration: underline;
-}
-#section-1 a > i,
-#section-4 a > i {
-    font-size: 9px;
-    margin-left: 10px;
+    color: #031c4e;
 }
 
+.blue-background {
+    background-image: linear-gradient(to bottom right, #0046c4, #001f9a);
+}
 
 /* header */
 /* nav */
@@ -268,14 +270,6 @@ input {
     background-color: #f3f5f9;
 }
 
-#section-1 a {
-    color: #3a8aff;
-    text-decoration: none;
-}
-#section-1 a:hover {
-    text-decoration: underline;
-}
-
 /* section-1 - logo list */
 .logo-list {
     margin-bottom: 10px;
@@ -349,6 +343,48 @@ input {
     margin-bottom: 5px;
 }
 
+#section-4 [class*="col-"] {
+    margin-bottom: 30px;
+}
+
+/* section-5 */
+#section-5 {
+    padding: 50px 0;
+}
+#section-5 h2 {
+    color: white;
+}
+#section-5 p,
+#section-5 a {
+    font-size: 12px;
+}
+
+.service-column {
+    margin-bottom: 30px;
+}
+
+.region-code p {
+    color: white;
+}
+.city p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.test-speed-link a {
+    color: rgb(70, 206, 230);
+}
+.test-speed-link a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.service-region {
+    padding-top: 9px;
+    border-bottom: 1px solid white;
+}
+
+
+
 
 @media screen and (max-width: 767px) {
     body {
@@ -413,4 +449,10 @@ input {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+}
+
+@media screen and (min-width: 1170px) {
+    /* .service-column:last-child {
+        margin-left: 15px;
+    } */
 }
