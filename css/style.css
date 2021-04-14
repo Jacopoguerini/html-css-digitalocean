@@ -380,6 +380,9 @@ input {
 
 .service-region {
     padding-top: 9px;
+}
+.service-region:not(:last-child) {
+    padding-top: 9px;
     border-bottom: 1px solid white;
 }
 
