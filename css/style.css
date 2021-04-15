@@ -488,7 +488,7 @@ footer a {
 }
 footer i {
     color: grey;
-    font-size: 15px;
+    font-size: 20px;
 }
 footer a:hover,
 footer i:hover {
@@ -501,6 +501,25 @@ footer i:hover {
 }
 #col-logo p:last-of-type {
     opacity: 0.5;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer h6 {
+    color: white;
+    font-size: 16px;
+}
+
+footer li a {
+    color: white;
+    opacity: 0.5;
+}
+footer li a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 
