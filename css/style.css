@@ -4,10 +4,6 @@ body {
     padding-top: 50px;
 }
 
-.blue {
-    color: #3a8aff;
-}
-
 .wrapper_80 {
     width: 80%;
     margin: 0 auto;
@@ -37,6 +33,11 @@ h5 {
 
 p {
     color: grey;
+}
+
+q {
+    color: grey;
+    font-size: 16px;
 }
 
 figcaption {
@@ -83,17 +84,20 @@ figcaption {
 }
 
 #section-1 a,
-#section-4 a {
+#section-4 a,
+#section-6 .quote-figure a {
     color: #3a8aff;
     text-decoration: none;
 }
 #section-1 a:hover,
-#section-4 a:hover {
+#section-4 a:hover,
+#section-6 .quote-figure a:hover {
     color: #031c4e;
 }
 #section-1 a::after,
 #section-4 a::after,
-.test-speed-link a::after {
+.test-speed-link a::after,
+#section-6 .quote-figure a::after {
     content: ">";
     padding-left: 10px;
 }
@@ -205,13 +209,15 @@ nav i {
     margin-left: 10px;
 }
 
-.navbar-nav > li > a.signup-btn {
+.navbar-nav > li > a.signup-btn,
+#section-7 .signup-btn {
     margin-top: 13px;
     padding: 5px 10px;
     color: #3a8aff;
     border: 1px solid #3a8aff;
 }
-.navbar-nav > li > a.signup-btn:hover {
+.navbar-nav > li > a.signup-btn:hover,
+#section-7 .signup-btn:hover {
     background-color: #3a8aff;
     color: white;
 }
@@ -403,6 +409,60 @@ input {
 /* section-6 */
 #section-6 {
     padding: 50px 0;
+    background-color: #f3f5f9;
+}
+
+.quote-figure {
+    width: 40%;
+    margin: 40px auto 15px auto;
+    padding: 30px 5px 50px 5px;
+    position: relative;
+    background-color: white;
+}
+.quote-figure img {
+    display: block;
+    width: 60%;
+    margin: 15px auto 25px auto;
+}
+
+#section-6 .arrow-left {
+    left: -10%;
+    transform: translateX(-50%);
+}
+#section-6 .arrow-right {
+    right: -15%;
+    transform: translateX(-50%);
+}
+
+#section-6 figcaption {
+    color: #031c4e;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+#section-6 figcaption:last-of-type {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+#section-6 .quote-figure a {
+    font-weight: 500;
+}
+
+/* section 7 */
+#section-7 {
+    padding: 50px 0;
+}
+
+#section-7 h2 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#section-7 .signup-btn {
+    font-weight: 500;
 }
 
 
@@ -427,6 +487,17 @@ input {
     #section-2 .col_nested {
         margin-bottom: 5px;
     }
+
+    .quote-figure {
+        width: 50%;
+    }
+
+    .quote-figure img {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
@@ -455,7 +526,7 @@ input {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
-    .navbar-collapse.collapse {
+    .navbar-collapse.collapse:not(.in) {
         display: none!important;
     }
     .navbar-nav {
