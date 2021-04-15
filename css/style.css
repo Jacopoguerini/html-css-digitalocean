@@ -522,7 +522,7 @@ footer li a:hover {
     text-decoration: underline;
 }
 
-/* sticky */
+/* fixed */
 
 .fixed-bottom {
     position: fixed;
