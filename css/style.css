@@ -121,7 +121,7 @@ nav {
 }
 
 .container>.navbar-header {
-    margin-right: 40px;
+    margin-right: 100px;
 }
 
 .navbar-nav>li>a {
@@ -209,9 +209,13 @@ nav i {
     margin-left: 10px;
 }
 
+.navbar-fixed-top {
+    padding: 10px 0;
+}
 .navbar-nav > li > a.signup-btn,
 #section-7 .signup-btn {
     margin-top: 13px;
+    margin-left: 10px;
     padding: 5px 10px;
     color: #3a8aff;
     border: 1px solid #3a8aff;
@@ -474,7 +478,7 @@ footer {
 footer img {
     width: 30px;
     margin-bottom: 10px;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 footer p,
@@ -499,6 +503,8 @@ footer i:hover {
     opacity: 0.5;
 }
 
+
+
 @media screen and (max-width: 767px) {
     body {
         padding-top: 20px;
@@ -506,6 +512,7 @@ footer i:hover {
 
     .container > .navbar-header {
         margin-right: 0px;
+        margin-left: 10px;
     }
 
     #login_form {
@@ -534,17 +541,6 @@ footer i:hover {
 }
 
 @media screen and (min-width: 768px) and (max-width: 990px) {
-    .logo-list img {
-        max-width: 100px;
-        max-height: 50px;
-    }
-
-    #section-2 .wrapper_80 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 991px) and (min-width: 768px) {
     .container > .navbar-header {
         margin-right: 0px;
     }
@@ -572,6 +568,21 @@ footer i:hover {
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .logo-list img {
+        max-width: 100px;
+        max-height: 50px;
+    }
+
+    #section-2 .wrapper_80 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1169px) {
+    .container>.navbar-header {
+        margin-right: 40px;
     }
 }
 
